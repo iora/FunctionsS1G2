@@ -36,9 +36,6 @@ void printGroupMemberNames()
 {
   printf("Phyrum Rithchea\nLiza Song\nReaksmey Kongkea Chea\nBorey Cheng\n"); // Print member names by starting with a new line
 }
-
-
-}
 // lIZA SONG
 int getSum(int myArray[]){
     int getSum = 0, i;
