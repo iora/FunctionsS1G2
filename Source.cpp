@@ -95,7 +95,7 @@ void printGroupMemberNames()
 double getAverage(int myArray[]);
 {
   float getAverage; // Average is sometimes float number.
-  int sum = 0, n, element;
+  int sum = 0, n = 500, element;
   for (element = 0, element < n, ++element)
   {
     sum += myArray[element];
