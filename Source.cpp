@@ -35,6 +35,15 @@ void printGroupMemberNames() {
 	printf("James Bond\n Brad Pitt/n");
 
 }
+// lIZA SONG
+int getSum(int myArray[]){
+    int getSum = 0, i;
+	for (i = 0; i < 500; i++) {
+		getSum += myArray[i];
+	}
+	printf("%i ", getSum);
+	return 0;
+}
 // BOREY CHENG
 int subtractAllValues(int myArray[]){
 	int i;
