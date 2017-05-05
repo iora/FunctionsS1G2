@@ -21,10 +21,17 @@ int main(void) {
 	for(i=0; i < 500; i++){
 		row[i]=i;
 	}
-	printf("\nSubtract all the elements with -1:\n"); //working
+	printf("\nThis is the sum:\n");   
+	getSum(row);
+	printf("\nSubtract all the elements with -1:\n"); 
 	subtractAllValues(row);
-	printf("\nInvert all the value:\n");   //working
+	printf("\nInvert all the value:\n"); 
 	invertAllValues(row);
+	printf("\nThe sum of square: \n");  
+	getSumOfSquares(row);
+	printf("\nPrint as character:\n");  
+	printAsChars(row);
+	printf("\nThis is the average: \n%f", getAverage(row));  
 	return 1;
 }
 
@@ -81,29 +88,28 @@ float invertAllValues(int myArray[] ){
 int getSumOfSquares(int myArray[]) {
 	int n = 1;
 	int result = 0;
-	for (int i = 0; i < 500; i++) {
+	for (int i = 0; i < 499; i++) {
 		n = myArray[i] * myArray[i];
 		result += n;
 	}
-	return result;
+	printf("%i", result);
+	return 0;
 }
 // Reaksmey Kongkea Chea
 void printAsChars(int myArray[]) {
 	for (int i = 0; i < 500; i++) {
-		printf("%c\n ", myArray[i]);
+		printf("%c ", myArray[i]);
 	}
 }
 
 //Phyrum Rithchea
 /* This code is used to find the average of the array (myArray)*/
-double getAverage(int myArray[]);
-{
-  float getAverage; // Average is sometimes float number.
-  int sum = 0, n = 500, element;
-  for (element = 0, element < n, ++element)
+double getAverage(int myArray[]){
+  double getAverage; // Average is sometimes float number.
+  int sum = 0, element;
+  for (element = 0; element < 500; ++element)
   {
     sum += myArray[element];
   }
-  getAverage = sum / n;
-  return getAverage;
+  return (double)sum/500;
 }
